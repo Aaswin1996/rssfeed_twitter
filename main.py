@@ -59,6 +59,7 @@ while True:
             print(to_be_hash_str,to_be_hash_st)
             print("Update in Rss feed hence message needs to be sent")
             for userid in userids:
+                time.sleep(2)
                 api.send_direct_message(userid,"Title: "+ to_be_hash_str.split("@@//")[0:1][0].split("@@")[0] +"\n"
                                                 +"Link: "+ to_be_hash_str.split("@@//")[0:1][0].split("@@")[1])
                 
