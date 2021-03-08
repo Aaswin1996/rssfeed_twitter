@@ -33,7 +33,7 @@ def username_to_userids(usernames,api):
         userids.append(int(x.id_str))
     return userids
 
-userids = username_to_userids(["SinhaAaswin","RaiAtulRai","PRSundar64"],api)
+userids = username_to_userids(["SinhaAaswin","mi8ltd"],api)
 while True:
     time.sleep(30)
     if len(list(mycol.find())) == 0:
